@@ -1,7 +1,7 @@
 ASS=assets/*
 CONF=conf/*
 IMG=images/*
-IND=talk
+IND=index
 
 $(IND).html: $(IND).Rmd $(IMG) $(CONF) $(ASS)
 	Rscript -e "rmarkdown::render('$(IND).Rmd', 'xaringan::moon_reader')"
